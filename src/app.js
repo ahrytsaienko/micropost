@@ -1,8 +1,12 @@
+import { http } from './easyhttp3';
+import { ui } from './ui';
 
-// CommonJS module Syntax
-// const person = require('./mymodule1');
+// Get posts on DOM load
 
-// ES2015 module
-// import { person, sayHello } from './mymodule2'
-// import * as mod from './mymodule2';
-import greeting from './mymodule2';
+document.addEventListener('DOMContentLoaded', getPosts);
+
+function getPosts() {
+    http.get('http://localhost:3000/posts')
+    .then(data => ui.showPosts(data))
+    .catch(err => console.log(err));
+};
