@@ -19,6 +19,16 @@
       "title": "Temsan",
       "body": "Post # 4",
       "id": 4
+    },
+    {
+      "title": "post 5",
+      "body": "test text",
+      "id": 5
+    },
+    {
+      "title": "post 5",
+      "body": "test post",
+      "id": 6
     }
   ]
 }
